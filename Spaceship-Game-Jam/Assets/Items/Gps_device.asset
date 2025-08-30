@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79b7535248438db449d14664f76291a9, type: 3}
   m_Name: Gps_device
   m_EditorClassIdentifier: Assembly-CSharp::Item
-  id: 0
+  id: 1
   itemName: Gps-device
   description: 
   weight: 0
