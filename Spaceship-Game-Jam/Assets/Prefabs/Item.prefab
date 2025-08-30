@@ -47,7 +47,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemPickUp
   item: {fileID: 11400000, guid: 32eb6c086a7f3c246a697d4c1a2709ed, type: 2}
-  items: []
 --- !u!65 &1469483489537200544
 BoxCollider:
   m_ObjectHideFlags: 0
