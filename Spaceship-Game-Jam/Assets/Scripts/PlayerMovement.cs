@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetButtonDown("Jump"))
         {
-            rb.linearVelocity = new Vector2(0, jumpForce);
+            rb.linearVelocity = transform.up * jumpForce;
         }
     }
 }
