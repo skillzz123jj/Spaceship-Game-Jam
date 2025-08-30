@@ -15,13 +15,11 @@ public class EndingVariations : MonoBehaviour
         { "Nokia 3310", "Esa forgot his indestructible Nokia 3310 — without it, he had no way to call Earth, and even worse, no Snake to pass the time." }
 
     };
-    private List<string> pickedItems = new List<string>();
+   
     [SerializeField] TMP_Text endingText;
 
     void Start()
     {
-        pickedItems.Add("Jerry can");
-        pickedItems.Add("Coffee mug");
 
         string randomItem = GetRandomUnusedItem();
         endingText.text = endings[randomItem];
@@ -33,7 +31,7 @@ public class EndingVariations : MonoBehaviour
 
         foreach (var key in endings.Keys)
         {
-            if (!pickedItems.Contains(key))
+            if (!GameData.items.Exists(item => item.itemName == key))
             {
                 availableItems.Add(key);
             }
@@ -48,4 +46,5 @@ public class EndingVariations : MonoBehaviour
         int randomIndex = Random.Range(0, availableItems.Count);
         return availableItems[randomIndex];
     }
+
 }

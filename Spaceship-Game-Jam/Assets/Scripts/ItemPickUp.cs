@@ -11,7 +11,7 @@ public class ItemPickUp : MonoBehaviour
     private void Start()
     {
         itemUI = FindFirstObjectByType<ItemUI>();
-  
+        GameData.items.Clear();
         if (itemUI == null)
             Debug.LogWarning("ItemPickUp: ItemUI not found in scene.");
     }
@@ -52,6 +52,7 @@ public class ItemPickUp : MonoBehaviour
             {
                 playerInv.items.Add(item);
                 Debug.Log($"Added '{item.itemName}' to inventory. Count now: {playerInv.items.Count}");
+                GameData.items.Add(item);
             }
 
             if (itemUI != null && item != null)
