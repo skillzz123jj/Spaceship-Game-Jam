@@ -35,6 +35,7 @@ public class MenuButtons : MonoBehaviour
         Time.timeScale = 1f;
         pauseMenuisOn = false;
         pauseMenu.SetActive(false);
+        AudioListener.pause = false;
     }
 
     public void PauseGame()
@@ -42,6 +43,7 @@ public class MenuButtons : MonoBehaviour
         Time.timeScale = 0f;
         pauseMenuisOn = true;
         pauseMenu.SetActive(true);
+        AudioListener.pause = true;
     }
 
     public void BackToMenu(int scene)
