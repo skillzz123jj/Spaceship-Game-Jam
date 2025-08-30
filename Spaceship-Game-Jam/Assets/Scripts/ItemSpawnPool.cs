@@ -168,7 +168,6 @@ public class ItemSpawner : MonoBehaviour
         {
             foreach (Transform child in transform)
             {
-                if (child == transform) continue;
                 Gizmos.DrawWireSphere(child.position, 0.35f);
             }
         }
