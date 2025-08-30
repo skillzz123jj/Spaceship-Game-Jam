@@ -1,4 +1,6 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class PlayerController : MonoBehaviour
 {
@@ -6,14 +8,20 @@ public class PlayerController : MonoBehaviour
     public float jumpForce;
     public Animator animator;
     public GameObject model;
-    
 
+    [Header("Audio")]
+    public AudioSource audioSource;
+    public AudioClip landSound;
+
+    private bool wasGrounded;
+    private bool canPlayLandSound = false;
 
     public Rigidbody rb;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        StartCoroutine(EnableLandSoundAfterDelay(0.5f));
     }
 
     void Update()
@@ -40,6 +48,18 @@ public class PlayerController : MonoBehaviour
 
         if (isGrounded()) animator.SetBool("isGrounded", true);
         else animator.SetBool("isGrounded", false);
+
+        bool grounded = isGrounded();
+
+        if (grounded && !wasGrounded)
+        {
+            if (landSound != null && audioSource != null && canPlayLandSound)
+            {
+                audioSource.PlayOneShot(landSound);
+            }
+        }
+
+        wasGrounded = grounded;
     }
 
     private bool isGrounded()
@@ -47,5 +67,11 @@ public class PlayerController : MonoBehaviour
         bool grounded = Physics.Raycast(transform.position, -transform.up, .5f);
         Debug.DrawRay(transform.position, -transform.up * .5f, grounded ? Color.green : Color.red);
         return grounded;
+    }
+
+    private IEnumerator EnableLandSoundAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        canPlayLandSound = true;
     }
 }
