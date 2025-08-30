@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Rubberduck
   m_EditorClassIdentifier: Assembly-CSharp::Item
   id: 0
-  itemName: 
+  itemName: Rubber duck
   description: 
   weight: 0
   isPickedUp: 0

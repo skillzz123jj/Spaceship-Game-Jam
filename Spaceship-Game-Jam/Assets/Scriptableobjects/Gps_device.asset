@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Gps_device
   m_EditorClassIdentifier: Assembly-CSharp::Item
   id: 0
-  itemName: 
+  itemName: Gps-device
   description: 
   weight: 0
-  isPickedUp: 0
+  isPickedUp: 1
