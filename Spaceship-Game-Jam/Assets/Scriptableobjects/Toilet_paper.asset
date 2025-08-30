@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79b7535248438db449d14664f76291a9, type: 3}
   m_Name: Toilet_paper
   m_EditorClassIdentifier: Assembly-CSharp::Item
-  itemName: Toilet_paper
+  id: 0
+  itemName: Toilet paper
+  description: 
   weight: 0
-  isPickedUp: 0
+  isPickedUp: 1
