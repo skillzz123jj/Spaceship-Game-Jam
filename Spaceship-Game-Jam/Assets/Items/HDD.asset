@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 79b7535248438db449d14664f76291a9, type: 3}
-  m_Name: Coffeemug
+  m_Name: HDD
   m_EditorClassIdentifier: Assembly-CSharp::Item
-  id: 1
-  itemName: Coffeemug
+  id: 8
+  itemName: HDD
   description: 
   weight: 0
   isPickedUp: 0
