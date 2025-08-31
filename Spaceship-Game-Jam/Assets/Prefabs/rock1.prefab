@@ -10,23 +10,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: bdf51a72b8307884292f6c28e81b4e40, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.37
+      value: -3.7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bdf51a72b8307884292f6c28e81b4e40, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 102.07
+      value: 99.1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bdf51a72b8307884292f6c28e81b4e40, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 20.4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bdf51a72b8307884292f6c28e81b4e40, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.9700365
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bdf51a72b8307884292f6c28e81b4e40, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bdf51a72b8307884292f6c28e81b4e40, type: 3}
       propertyPath: m_LocalRotation.y
@@ -34,7 +34,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bdf51a72b8307884292f6c28e81b4e40, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0.24295928
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bdf51a72b8307884292f6c28e81b4e40, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -46,7 +46,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bdf51a72b8307884292f6c28e81b4e40, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 28.123
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: bdf51a72b8307884292f6c28e81b4e40, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -88,6 +88,6 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 7702779526387289552, guid: bdf51a72b8307884292f6c28e81b4e40, type: 3}
