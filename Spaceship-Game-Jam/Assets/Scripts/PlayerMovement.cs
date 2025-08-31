@@ -31,8 +31,8 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("isWalking", true);
             transform.Translate(Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime, 0, 0);
 
-            if (Input.GetAxis("Horizontal") > 0) model.transform.rotation = Quaternion.Euler(0, 90, 0);
-            else model.transform.rotation = Quaternion.Euler(0, -90, 0);
+            if (Input.GetAxis("Horizontal") > 0) model.transform.localRotation = Quaternion.Euler(0, 90, 0);
+            else model.transform.localRotation = Quaternion.Euler(0, -90, 0);
 
         }
         else animator.SetBool("isWalking", false);
@@ -60,6 +60,8 @@ public class PlayerController : MonoBehaviour
         }
 
         wasGrounded = grounded;
+
+        transform.position = new Vector3(transform.position.x, transform.position.y, 0);
     }
 
     private bool isGrounded()
