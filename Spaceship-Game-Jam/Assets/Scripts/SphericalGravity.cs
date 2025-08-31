@@ -6,8 +6,13 @@ public class SphericalGravity : MonoBehaviour
     public float gravity = 30f;
     public float alignSpeed = 5f;
     Rigidbody rb;
+    Transform modelTransform;
 
-    void Awake() => rb = GetComponent<Rigidbody>();
+    void Awake()
+    {
+        rb = GetComponent<Rigidbody>();
+        modelTransform = transform.GetChild(0); // Assuming the model is the first child
+    }
 
     void FixedUpdate()
     {
