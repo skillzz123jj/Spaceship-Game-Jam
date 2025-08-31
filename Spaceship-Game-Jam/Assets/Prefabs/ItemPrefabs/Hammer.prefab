@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 118afb7627f8c704da8b104dc50bb3f3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 296.65463
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 118afb7627f8c704da8b104dc50bb3f3, type: 3}
       propertyPath: m_LocalPosition.y
@@ -18,7 +18,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 118afb7627f8c704da8b104dc50bb3f3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 526.41425
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 118afb7627f8c704da8b104dc50bb3f3, type: 3}
       propertyPath: m_LocalRotation.w
@@ -48,6 +48,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 118afb7627f8c704da8b104dc50bb3f3, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e213e4f74510d3f4b9fbd73c2a44f7ea, type: 2}
     - target: {fileID: 919132149155446097, guid: 118afb7627f8c704da8b104dc50bb3f3, type: 3}
       propertyPath: m_Name
       value: Hammer

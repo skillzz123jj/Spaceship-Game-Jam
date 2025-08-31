@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ad19be115b048404e8550586c28eb7a3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 297.8637
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ad19be115b048404e8550586c28eb7a3, type: 3}
       propertyPath: m_LocalPosition.y
@@ -18,7 +18,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ad19be115b048404e8550586c28eb7a3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 526.6339
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ad19be115b048404e8550586c28eb7a3, type: 3}
       propertyPath: m_LocalRotation.w
@@ -48,6 +48,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ad19be115b048404e8550586c28eb7a3, type: 3}
+      propertyPath: 'm_Materials.Array.data[3]'
+      value: 
+      objectReference: {fileID: 2100000, guid: ee7da662c46568c49af404d5a3c59daf, type: 2}
     - target: {fileID: 919132149155446097, guid: ad19be115b048404e8550586c28eb7a3, type: 3}
       propertyPath: m_Name
       value: JoyStick
