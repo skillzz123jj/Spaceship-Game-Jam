@@ -715,6 +715,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EndingVariations
   endingText: {fileID: 1497821189}
+  titleText: {fileID: 319871151}
 --- !u!114 &793224666
 MonoBehaviour:
   m_ObjectHideFlags: 0
