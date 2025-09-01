@@ -28,6 +28,7 @@ public class EndingVariations : MonoBehaviour
     };
    
     [SerializeField] TMP_Text endingText;
+    [SerializeField] TMP_Text titleText;
 
     void Start()
     {
@@ -35,10 +36,14 @@ public class EndingVariations : MonoBehaviour
         string randomItem = GetRandomUnusedItem();
         if (randomItem != null)
         {
+            titleText.text = "Game Over!";
+            titleText.color = Color.red;
             endingText.text = endings[randomItem];
         }
         else
         {
+            titleText.text = "You Win!";
+            titleText.color = Color.green;
             endingText.text = "Congratulations! Esa made it back home!";
         }
     }
