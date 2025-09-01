@@ -51,4 +51,10 @@ public class MenuButtons : MonoBehaviour
         SceneManager.LoadScene(scene);
 
     }
+
+    void Start()
+    {
+        // Audio was stuck paused when starting the game from main menu
+        AudioListener.pause = false;
+    }
 }

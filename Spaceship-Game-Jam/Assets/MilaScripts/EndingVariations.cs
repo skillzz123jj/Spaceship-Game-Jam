@@ -33,7 +33,14 @@ public class EndingVariations : MonoBehaviour
     {
 
         string randomItem = GetRandomUnusedItem();
-        endingText.text = endings[randomItem];
+        if (randomItem != null)
+        {
+            endingText.text = endings[randomItem];
+        }
+        else
+        {
+            endingText.text = "Congratulations! Esa made it back home!";
+        }
     }
 
     string GetRandomUnusedItem()
@@ -50,8 +57,7 @@ public class EndingVariations : MonoBehaviour
 
         if (availableItems.Count == 0)
         {
-            Debug.LogWarning("No items left!");
-            ending = "Congratulations! Esa made it back home!";
+            Debug.Log("All items found - Player Won!");
             return null;
         }
         else
